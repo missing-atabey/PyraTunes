@@ -3,7 +3,7 @@ A Spotify and YouTube mp3 downloader
 
 ## Dependencies
   wxPython 4.1.1 |
-  potipy==2.16.1 |
+  spotipy==2.16.1 |
   pytube 11.0.2 |
   moviepy 1.0.3 |
   rich 11.0.0 |
