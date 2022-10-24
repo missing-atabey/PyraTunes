@@ -20,5 +20,3 @@ Open the downloader by simply running the "main.py" file. To download things sim
 ## Disclaimer: I am not responsible for how you decide to use this. Piracy is illegal, but It's the law that will judge you not me.
 
 <img width="417" alt="pyra ss" src="https://user-images.githubusercontent.com/67593209/151176333-37221311-06f5-4cb9-a2e9-c17696997933.png">
-
-<img width="675" alt="pyra ss 2" src="https://user-images.githubusercontent.com/67593209/151176351-1de1ffc1-dacb-4ce6-b5e1-cb48b2d23c24.png">
