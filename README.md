@@ -2,12 +2,12 @@
 A Spotify and YouTube mp3 downloader
 
 ## Dependencies
-  wxPython 4.1.1 |
-  spotipy==2.16.1 |
-  pytube 11.0.2 |
-  moviepy 1.0.3 |
-  rich 11.0.0 |
-  sentry_sdk==1.5.3
+  wxPython |
+  spotipy |
+  pytube |
+  ffmpeg |
+  rich |
+  sentry_sdk
   
   ## Quick Note
   Credit to the spotify-dl developers for their code which was ONLY used as a backbone for the spotify song detail retrieval (although it could easily have been 90% of this project had I decided to simply make a gui and add minimal functionality). Evidently their project does all mine can and more, but I thought it would be quite fun to use their code which utilizes spotipy and do the video download and conversion to mp3 on my own (plus the gui ofc)
