@@ -1,16 +1,25 @@
+import imp
 from pytube import *
-from moviepy.editor import VideoFileClip
+from moviepy.video.io.VideoFileClip import VideoFileClip
 import os
+import sys
+import subprocess
+import misc
 from spotify_dl import spotify
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-from misc import values as v
+
+keys = []
+for lines in open("spotify_keys.txt"):
+    keys.append(lines)
+keys.pop(0)
 
 #mp4 to mp3
-def convert_to_mp3(filename):
-    clip = VideoFileClip(filename)
-    clip.audio.write_audiofile(filename[:-4] + ".mp3")
-    clip.close()
+def convert_to_mp3(video_file, output_ext="mp3"):
+
+    filename = video_file[:-4]
+    syatem_call = "ffmpeg -y -i \"" + filename + ".mp4\" \"" + filename + ".mp3\""
+    os.system(syatem_call)
 
 
 #yt video downloader
@@ -59,8 +68,8 @@ def spotifyToSearches(spotLink, s_type):
     
             
 def spotify_auth():
-    client = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=v.cid,
-                                                                   client_secret=v.cs))
+    client = spotipy.Spotify(auth_manager=SpotifyClientCredentials(client_id=keys[0],
+                                                                   client_secret=keys[1]))
     return client
 
 def batchDownload(searches, folder_name):
