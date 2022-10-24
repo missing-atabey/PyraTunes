@@ -3,7 +3,7 @@ A Spotify and YouTube mp3 downloader
 
 ## Dependencies
   wxPython 4.1.1 |
-  potipy==2.16.1 |
+  spotipy==2.16.1 |
   pytube 11.0.2 |
   moviepy 1.0.3 |
   rich 11.0.0 |
@@ -17,5 +17,8 @@ Simply access the /misc/values.py file and replace the filler values of "cid" an
 
 Open the downloader by simply running the "main.py" file. To download things simply select the type of link you want to use, input the link into the url text field, and press download. There is an optional target folder name field in which you can change the folder that'll be used to save the mp3 files. Leaving this field empty will automatically set the target folder name as "Downloads".
 
-## Disclaimer: I am not responsible for how you decide to use this. Piracy is illegal, however I am not judging.
+## Disclaimer: I am not responsible for how you decide to use this. Piracy is illegal, but It's the law that will judge you not me.
 
+<img width="417" alt="pyra ss" src="https://user-images.githubusercontent.com/67593209/151176333-37221311-06f5-4cb9-a2e9-c17696997933.png">
+
+<img width="675" alt="pyra ss 2" src="https://user-images.githubusercontent.com/67593209/151176351-1de1ffc1-dacb-4ce6-b5e1-cb48b2d23c24.png">
